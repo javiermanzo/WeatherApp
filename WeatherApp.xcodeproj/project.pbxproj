@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E2537F71CB4A854006D94F1 /* CitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2537F61CB4A854006D94F1 /* CitiesViewController.m */; };
 		2E58F03B1CB4A4F3009F71CD /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E58F03A1CB4A4F3009F71CD /* Settings.plist */; };
+		2E5CAADE1CD064DD00F8240F /* LocationSearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5CAADD1CD064DD00F8240F /* LocationSearchResultsTableViewController.m */; };
+		2E5CAAE41CD076DB00F8240F /* ListCitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5CAAE31CD076DB00F8240F /* ListCitiesTableViewController.m */; };
+		2E5CAAE61CD07FFB00F8240F /* airlineDataa.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E5CAAE51CD07FFB00F8240F /* airlineDataa.json */; };
 		2E8FCFDF1CB36E6900F104BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FCFDE1CB36E6900F104BA /* main.m */; };
 		2E8FCFE21CB36E6900F104BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FCFE11CB36E6900F104BA /* AppDelegate.m */; };
 		2E8FCFE81CB36E6900F104BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8FCFE61CB36E6900F104BA /* Main.storyboard */; };
@@ -34,9 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E2537F51CB4A854006D94F1 /* CitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesViewController.h; sourceTree = "<group>"; };
-		2E2537F61CB4A854006D94F1 /* CitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesViewController.m; sourceTree = "<group>"; };
 		2E58F03A1CB4A4F3009F71CD /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		2E5CAADC1CD064DD00F8240F /* LocationSearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSearchResultsTableViewController.h; sourceTree = "<group>"; };
+		2E5CAADD1CD064DD00F8240F /* LocationSearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSearchResultsTableViewController.m; sourceTree = "<group>"; };
+		2E5CAAE21CD076DB00F8240F /* ListCitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCitiesTableViewController.h; sourceTree = "<group>"; };
+		2E5CAAE31CD076DB00F8240F /* ListCitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCitiesTableViewController.m; sourceTree = "<group>"; };
+		2E5CAAE51CD07FFB00F8240F /* airlineDataa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airlineDataa.json; sourceTree = "<group>"; };
 		2E8FCFDA1CB36E6900F104BA /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8FCFDE1CB36E6900F104BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E8FCFE01CB36E6900F104BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +127,7 @@
 				2E8FD0011CB36E8400F104BA /* View */,
 				2E8FD0071CB36F3D00F104BA /* ViewController */,
 				2EE3C7511CB8707D00A84491 /* Utils */,
+				2E5CAAE51CD07FFB00F8240F /* airlineDataa.json */,
 				2E8FCFE01CB36E6900F104BA /* AppDelegate.h */,
 				2E8FCFE11CB36E6900F104BA /* AppDelegate.m */,
 				2E8FCFEE1CB36E6900F104BA /* Info.plist */,
@@ -178,8 +184,6 @@
 		2E8FD0071CB36F3D00F104BA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2E2537F51CB4A854006D94F1 /* CitiesViewController.h */,
-				2E2537F61CB4A854006D94F1 /* CitiesViewController.m */,
 				2EE5F79B1CB5A30A00E63132 /* CityWeatherTableViewController.h */,
 				2EE5F79C1CB5A30A00E63132 /* CityWeatherTableViewController.m */,
 				2EE3C75B1CBA064F00A84491 /* EmptyCityViewController.h */,
@@ -190,6 +194,10 @@
 				2EE3C75F1CBAF17500A84491 /* SettingsTableViewController.m */,
 				2EE3C74D1CB86FEE00A84491 /* SplashViewController.h */,
 				2EE3C74E1CB86FEE00A84491 /* SplashViewController.m */,
+				2E5CAAE21CD076DB00F8240F /* ListCitiesTableViewController.h */,
+				2E5CAAE31CD076DB00F8240F /* ListCitiesTableViewController.m */,
+				2E5CAADC1CD064DD00F8240F /* LocationSearchResultsTableViewController.h */,
+				2E5CAADD1CD064DD00F8240F /* LocationSearchResultsTableViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -306,6 +314,7 @@
 				2E58F03B1CB4A4F3009F71CD /* Settings.plist in Resources */,
 				2EE5F7A51CB61EF600E63132 /* Assets.xcassets in Resources */,
 				2E8FCFE81CB36E6900F104BA /* Main.storyboard in Resources */,
+				2E5CAAE61CD07FFB00F8240F /* airlineDataa.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +375,6 @@
 			files = (
 				2EE5F7A31CB601AD00E63132 /* SuggestedLocation.m in Sources */,
 				2EE3C76C1CBAF21200A84491 /* SettingsHelper.m in Sources */,
-				2E2537F71CB4A854006D94F1 /* CitiesViewController.m in Sources */,
 				2EE3C75D1CBA064F00A84491 /* EmptyCityViewController.m in Sources */,
 				2EE3C74F1CB86FEE00A84491 /* SplashViewController.m in Sources */,
 				2E8FD0041CB36E8400F104BA /* DayWeather.m in Sources */,
@@ -378,8 +386,10 @@
 				2E8FD0031CB36E8400F104BA /* CurrentCondition.m in Sources */,
 				2EE3C76A1CBAF21200A84491 /* DataHelper.m in Sources */,
 				2E8FCFE21CB36E6900F104BA /* AppDelegate.m in Sources */,
+				2E5CAAE41CD076DB00F8240F /* ListCitiesTableViewController.m in Sources */,
 				2E8FD0061CB36E8400F104BA /* Weather.m in Sources */,
 				2E8FD0021CB36E8400F104BA /* Astronomy.m in Sources */,
+				2E5CAADE1CD064DD00F8240F /* LocationSearchResultsTableViewController.m in Sources */,
 				2EE3C7571CB8740100A84491 /* PageCitiesViewController.m in Sources */,
 				2E8FCFDF1CB36E6900F104BA /* main.m in Sources */,
 				2E8FD0051CB36E8400F104BA /* HourlyWeather.m in Sources */,

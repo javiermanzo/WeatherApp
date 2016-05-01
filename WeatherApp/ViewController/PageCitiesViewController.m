@@ -55,11 +55,15 @@
 }
 
 -(void)configureNavigationBar{
+    
+//    self.navigationController.navigationBar.barStyle  = UIBarStyleBlackTranslucent;
+//    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:52.0/255.0 green:152.0/255.0 blue:219.0/255.0 alpha:1];
+    
+    
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:52.0/255.0 green:152.0/255.0 blue:219.0/255.0 alpha:1]];
     [self.navigationController.navigationBar setTranslucent:NO];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
-    [self.navigationController.navigationBar setTitleTextAttributes: @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
@@ -195,9 +199,14 @@
 }
 
 -(void)addCityWeather{
-    CitiesViewController* citiesViewController  = [self.mainStoryboard instantiateViewControllerWithIdentifier:@"CitiesViewController"];
+    
+    ListCitiesTableViewController* citiesViewController  = [self.mainStoryboard instantiateViewControllerWithIdentifier:@"ListCitiesTableViewController"];
     citiesViewController.delegate = self;
     citiesViewController.listWeather = self.listWeather;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:citiesViewController];
+    
+//    [self presentViewController:navigationController animated:YES completion:nil];
     [self.navigationController pushViewController:citiesViewController animated:YES];
 }
 

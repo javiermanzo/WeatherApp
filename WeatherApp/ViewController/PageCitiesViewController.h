@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CitiesViewController.h"
+#import "ListCitiesTableViewController.h"
 #import "EmptyCityViewController.h"
 
-@interface PageCitiesViewController : UIViewController <UIPageViewControllerDataSource,UIPageViewControllerDelegate,CitiesViewControllerDelegate,EmptyCityViewControllerDelegate>
+
+@interface PageCitiesViewController : UIViewController <UIPageViewControllerDataSource,UIPageViewControllerDelegate,ListCitiesTableViewControllerDelegate,EmptyCityViewControllerDelegate>
 
 
 @property (retain, nonatomic) NSMutableArray* listWeather;
